@@ -1,10 +1,10 @@
 runtime: python311
 
 env_variables:
- FLASK_SECRET_KEY: "s3cr3t-k3y-1234567890"
+ FLASK_SECRET_KEY: "your-secret-key"
  DB_USER: root
- DB_PASSWORD: your-password
+ DB_PASSWORD: your-passwordgit
  DB_NAME: guestdb
- DB_SOCKET_PATH: /cloudsql/light-depot-450506-c6:us-central1:mydb
+ DB_SOCKET_PATH: /cloudsql/your-projecti-id:us-central1:your-instance-name
 
 entrypoint: gunicorn -b :$PORT main:app
